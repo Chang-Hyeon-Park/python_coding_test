@@ -24,3 +24,15 @@
 > 포인트: `sys.stdin.readline`으로 input 갈아끼우기 + 결과 모아서 `"\n".join()`
 '''
 
+import sys
+input = sys.stdin.readline
+
+t = int(input())
+res = []
+
+for _ in range(t):
+    n = int(input())
+    lst = list(map(int, input().split()))
+    res.append(f"{n} {sum(lst)}")
+
+print("\n".join(res))
