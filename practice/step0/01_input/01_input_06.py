@@ -29,3 +29,15 @@
 > 전부 `join`으로 해결할 것. `print(end=)` 쓰지 말기.
 
 ---'''
+
+n = int(input())
+lst = list(map(int, input().split()))
+
+print(" ".join(map(str, lst)))
+print(",".join(map(str, lst)))
+print("".join(map(str,lst)))
+sort_lst = sorted(lst, reverse=True)
+for x in sort_lst:
+    print(x)
+    
+print("\n".join(map(str, sorted(lst, reverse=True))))
